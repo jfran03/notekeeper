@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "firebase": "^9.12.1",
     "firebase-admin": "^11.1.0"
@@ -10,7 +11,6 @@
   "name": "notekeeper",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jfran03/notekeeper.git"
