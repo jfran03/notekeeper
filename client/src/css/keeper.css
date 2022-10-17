@@ -1,0 +1,22 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body{
+    background-color: rgb(240,240,240);
+}
+
+#note-container{
+    place-items: center center;
+}
+
+#note-form{
+    margin: auto;
+    width: 300px;
+}
+
+#notes-div{
+    padding-top: 20px;
+}
+
+#note{
+    width: 600px;
+}

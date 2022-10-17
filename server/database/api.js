@@ -1,3 +1,6 @@
+// NOTE: I DELETED THE key.json FILE, AS IT IS THE AUTH KEY TO PERFORM ANY OPERATIONS ON THE DATABASE
+// LEARN MORE HERE: https://firebase.google.com/docs/admin/setup
+
 const admin = require('firebase-admin');
 const key = require('./key.json');
 const db = admin.initializeApp({ credential: admin.credential.cert(key) });
@@ -17,13 +20,9 @@ const add = async (col,json) =>{
 // @param col => string : Name of the collection
 // @returns array
 const get = async (col) =>{
-    let results = [];
     const collection = firestore.collection(col);
     const snapshot = await collection.get();
-
-    snapshot.forEach(doc =>{
-        results[doc.id] = doc.data();
-    })
+    let results = snapshot.docs.map((doc)=> [doc.id,doc.data()]);
 
     return results;
 }
