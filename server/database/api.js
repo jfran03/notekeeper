@@ -12,8 +12,8 @@ const firestore = db.firestore();
 // @param col => string : Name of the collection
 // @param json => json : JSON for data 
 const add = async (col,json) =>{
-    firestore.collection(col).add(json);
-    return true;
+    const res = firestore.collection(col).add(json);
+    return [(await res).id, json];
 }
 
 // Returns an array for all stored documents from the collection

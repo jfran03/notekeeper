@@ -20,3 +20,16 @@ body{
 #note{
     width: 600px;
 }
+
+input{
+    text-align: center;
+    
+}
+
+input:read-only{
+    border: none;
+}
+
+input::placeholder{
+    color: black;
+}
