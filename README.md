@@ -1,7 +1,7 @@
 NoteKeeper project
 
-A full-stack application that contains a front-end, back-end, and a database to create, delete, and persist notes using a cloud database
+A full-stack application that utilizes a front & backend framework with a database to emulate a NoteKeeper web app. The project contains CRUD operations.
 
-NOTE: This project uses Firebase 9, which requires an admin sdk to perform database operations server side, learn more here: https://firebase.google.com/docs/admin/setup
+NOTE: This project uses the firebase-admin module, which requires a key to operate on. The .gitignore server-side ignores this for security reasons.
 
 Project is apart of a blog post I was assigned to do: https://sites.google.com/view/jerome-francisco/home?authuser=4
